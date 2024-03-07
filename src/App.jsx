@@ -13,7 +13,7 @@ function App() {
   const getQuotes = async () => {
     try {
       setLoading(true);
-      const response = await axios.get("https://animechan.xyz/api/quotes/random");
+      const response = await axios.get("https://animechan.xyz/api/random");
       setQuotes([response.data]);
     } catch (err) {
       console.error("Error fetching quotes:", err);
